@@ -9,7 +9,7 @@ public class Driver
     public static void main(String[] args)
     {
         int menuOption;
-        //Window window = new Window( 500, 500, "Hangman");
+        Word w;
         Scanner scan = new Scanner(System.in);
         char again = 'y';
 
@@ -25,7 +25,7 @@ public class Driver
             switch (menuOption)
             {
                 case 1:
-                    Word w = new Word();
+                    w = new Word();
 
                     break;
                     
@@ -40,7 +40,7 @@ public class Driver
             System.out.print("\n\nWould you like to continue playing? Enter y or n: ");
             again = scan.next().charAt(0);
             
-        }//ens while
+        }//end while
 
     }//end main
 
